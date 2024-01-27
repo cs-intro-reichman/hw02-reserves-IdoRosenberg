@@ -10,12 +10,19 @@ public class DamkaBoard {
 		
 		while(i <= size){
 			while (j <= size){
-				if(j == size)
-					System.out.print("*");
-				else
-					System.out.print("* ");
-				j++;
+				if(i%2==0){
+		
+					if(j == size)
+						System.out.print("*");
+					else
+						System.out.print("* ");
 				
+			}
+				else{
+				System.out.print("* ");
+				
+			}
+			j++;
 			}
 			if(i==size)
 				break;
