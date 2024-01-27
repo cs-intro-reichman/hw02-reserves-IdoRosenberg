@@ -3,6 +3,28 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		//// Put your code here
+		int size = Integer.parseInt(args[0]);
+		int i = 0;
+		int j = 0;
+		boolean needSpace = true;
+		
+		while(i < size){
+			while (j < size){
+				System.out.print("* ");
+				j++;
+			}
+			System.out.println();
+			i++;
+			j = 0;
+			if (needSpace){
+				System.out.print(" ");
+				needSpace = false;
+			}
+			else
+				needSpace = true;
+				
+			
+		}
+		
 	}
 }

@@ -4,6 +4,19 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+		int rand = (int) (Math.random()*10);
+		boolean isBigger = true;
+		System.out.print(rand + " ");
+		while(isBigger){
+			int rand1 = (int) (Math.random()*10);
+			if(rand1 >= rand){
+				rand = rand1;
+				System.out.print(rand + " ");
+			}
+			else
+				isBigger = false;
+			
+		}
+		
 	}
 }
