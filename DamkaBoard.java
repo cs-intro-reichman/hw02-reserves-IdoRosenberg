@@ -17,7 +17,10 @@ public class DamkaBoard {
 				j++;
 				
 			}
-			System.out.println();
+			if(i==size)
+				break;
+			else
+				System.out.println();
 			i++;
 			j = 1;
 			if (needSpace){
