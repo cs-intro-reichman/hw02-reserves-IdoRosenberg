@@ -36,12 +36,12 @@ public class OneOfEachStats {
 		boolean boy = true;
 		boolean notSame = true;
 		
-		double gen1 = Math.random();
-			if (gen1 > 0.5){	
+		double gen1 = generator.nextDouble();
+			if (gen1 >= 0.5){	
 				amountOfChilds++;
 				while(notSame){
-					double gen2 = Math.random();
-					if (gen2 > 0.5){
+					double gen2 = generator.nextDouble();
+					if (gen2 >= 0.5){
 						amountOfChilds++;
 					}
 					else{
@@ -53,8 +53,8 @@ public class OneOfEachStats {
 			else {
 				amountOfChilds++;
 				while(notSame){
-					double gen2 = Math.random();
-					if (gen2 < 0.5){
+					double gen2 = generator.nextDouble();
+					if (gen2 <= 0.5){
 						amountOfChilds++;
 					}
 					else{
